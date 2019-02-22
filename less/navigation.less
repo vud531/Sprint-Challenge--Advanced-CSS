@@ -1,1 +1,39 @@
 // Navigation code here
+
+// on mobile view
+@phone: ~"( max-width: 600px )";
+
+
+nav {
+
+    .navColor();
+
+    h1 {
+        .verticalPadding();
+        text-align: center;
+        font-size: 4em;
+    }
+
+
+    .anchors-container {
+        .verticalPadding();
+        .customLayout(row, space-around, center);
+        width: 50%;
+        margin: auto;
+
+        @media @phone {
+            width: 100%;
+        }
+
+        @media (max-width: 300px) {
+            .customLayout(column, center, center);
+        }
+        a {
+            .customFont(@main-font-color, 1.6rem);
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
