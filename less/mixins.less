@@ -6,9 +6,9 @@
     font-family: @river-bend;
 }
 
-.customButtom(@w, @h) {
-    width: @w;
-    height: @h;
+.customButtom(@width, @height) {
+    width: @width;
+    height: @height;
     padding: 10px 20px ;
     text-align: center;
     font-size: 2em;
@@ -26,16 +26,16 @@
     border: solid @btn-bg-color 1px;
 }
 
-.customLayout(@d, @j, @a) {
+.customLayout(@display, @justify-content, @align-items) {
     display: flex;
     flex-direction: @d;
     justify-content: @j;
-    align-items: @a;
+    align-items: @align-items;
 }
 
-.customFont(@c, @s) {
-    color: @c;
-    font-size: @s;
+.customFont(@color, @size) {
+    color: @color;
+    font-size: @size;
     text-decoration: none;
 }
 
