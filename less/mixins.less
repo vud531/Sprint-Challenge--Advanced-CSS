@@ -1,1 +1,44 @@
 // Mixins Here
+
+.navColor() {
+    background-color: @nav-bg;
+    border-bottom: 1px double @sea-shell;
+    font-family: @river-bend;
+}
+
+.customButtom(@w, @h) {
+    width: @w;
+    height: @h;
+    padding: 10px 20px ;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: @btn-bg-color;
+    cursor: pointer;
+}
+
+.customHoverBtn {
+    color: @btn-bg-color;
+    background-color: white;
+    border: solid @btn-bg-color 1px;
+}
+
+.customLayout(@d, @j, @a) {
+    display: flex;
+    flex-direction: @d;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.customFont(@c, @s) {
+    color: @c;
+    font-size: @s;
+    text-decoration: none;
+}
+
+.verticalPadding() {
+    padding: 10px 0px;
+}
